@@ -1,3 +1,6 @@
-* Est-ce qu'il faut écrire les scénarios avec le diagramme de cas?
+﻿* Est-ce qu'il faut écrire les scénarios avec le diagramme de cas?
+  => oui
 * Est-ce qu'il est possible de déterminer sur le diagramme de cas qu'un cas doit être réaliser avant un autre?
+  => non
 * Quelle forme pour l'analyse pour l'examen?
+  => rapport
