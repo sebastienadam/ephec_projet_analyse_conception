@@ -1,0 +1,22 @@
+\newcommand{\authorname}{Sébastien Adam}
+\newcommand{\authoremail}{s.adam@students.ephec.be}
+\newcommand{\code}[1]{\colorbox{gray05}{\texttt{\textcolor{pink}{#1}}}}
+\newcommand{\euro}{\texteuro}
+\newcommand{\exam}{\colorbox{jaunefluo}{Attention! Examen.}}
+\newcommand{\refpage}[1]{\ref{#1} à la page \pageref{#1}}
+\newcommand{\todo}{\colorbox{red}{\textbf{TODO}}}
+\newcommand{\ttbf}[1]{{\bfseries\ttfamily #1}}
+
+\newenvironment{questionnaire}{%
+\color{darkblue}
+\begin{enumerate}}{%
+\end{enumerate}
+\normalcolor}
+\newcommand{\question}[1]{\item #1}
+\newcommand{\answere}[1]{{\color{black} #1}}
+
+%-- Macros qui devraient être définie dans chaque document --------------------%
+\ifthenelse{\isundefined{\documenttitle}}{\newcommand{\documenttitle}{++UNDEF++}}{}
+\ifthenelse{\isundefined{\schoolyear}}{\newcommand{\schoolyear}{++UNDEF++}}{}
+\ifthenelse{\isundefined{\teacheremail}}{\newcommand{\teacheremail}{++UNDEF++}}{}
+\ifthenelse{\isundefined{\teachername}}{\newcommand{\teachername}{++UNDEF++}}{}
