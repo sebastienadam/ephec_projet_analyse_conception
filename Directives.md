@@ -9,4 +9,4 @@ Il faut tout particulièrement veiller à la cohérence entre les différents sc
 
 Il faut réaliser un rapport de plus ou moins 15 pages expliquant les différents choix effectués pour la réalisation des différents diagrammes. Ce rapport devra aussi expliquer la séquence de réalisation des diagrammes.
 
-Le rapport devra être rendu 15 jours avant l'examen en version papier et en version électronique. L'examen consistera en une défense du rapport et de l'analyse.
+Le rapport devra être rendu 15 jours avant l'examen en version papier et en version électronique. L'examen consistera en une défense du rapport et de l'analyse. Il faudra expliquer comment on passe d'un diagramme à l'autre. Le prof doit comprendre si nous avons compris l'utilité des diagrammes.
