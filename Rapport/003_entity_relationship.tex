@@ -18,9 +18,10 @@ J'ai réalisé ce diagramme en deuxième lieu afin d'avoir une vue globale de l'
 Vu la complexité des biens immobiliers, j'ai décidé de mettre tous les attributs possibles à l'entité \og{}Bien immobilier\fg{}. Suivant la valeur des attributs \og{}Type bien\fg{} et \og{}Type offre\fg{}, les attributs auront une valeur pertinente ou non. La table \refpage{tbl_usage_attribut_bien_immobilier} nous donne les conditions de validité des attributs. Dans le tableau, un \og{}L\fg{} signifie que l'attribut est à utiliser pour une location et un \og{}V\fg{} signifie que l'attribut est à utiliser pour une vente.
 
 \begin{table}
+  \centering
   \begin{tabular}{|l|c|c|c|c|c|c|}
   \hline
-  \rowcolor{gray05} \multicolumn{1}{|c|}{\textbf{Attribut}} & \multicolumn{1}{|c|}{\textbf{Studio}} & \multicolumn{1}{|c|}{\textbf{Appartement}} & \multicolumn{1}{|c|}{\textbf{Maison}} & \multicolumn{1}{|c|}{\textbf{Entrepôt}} & \multicolumn{1}{|c|}{\textbf{Bureau - Commerce}} & \multicolumn{1}{|c|}{\textbf{Terrain}} \\
+  \rowcolor{gray05} \multicolumn{1}{|c|}{\textbf{Attribut}} & \multicolumn{1}{|c|}{\textbf{Studio}} & \multicolumn{1}{|c|}{\textbf{Appartement}} & \multicolumn{1}{|c|}{\textbf{Maison}} & \multicolumn{1}{|c|}{\textbf{Entrepôt}} & \multicolumn{1}{|c|}{\textbf{Emplacement}} & \multicolumn{1}{|c|}{\textbf{Terrain}} \\
   \hline
   \hline
   \textbf{Ascenseur} & L + V & L + V &  &  &  &  \\
@@ -72,4 +73,4 @@ Vu la complexité des biens immobiliers, j'ai décidé de mettre tous les attrib
 
 J'ai défini une entité \og{}Adresse\fg{} qui sera associée aussi bien aux clients qu'au biens immobiliers. En effet, le concept de localisation des biens immobiliers est identique à celui de localisation des clients.
 
-J'ai défini une entité générique pour les client. Ensuite j'ai créé des entités plus spécialisées pour les clients offrants et les clients cherchant un bien. À mon sens, un client qui aujourd'hui est un client cherchant un bien peut demain être un client offrant un bien, d'où l'utilisation d'un client générique. L'entité \og{}Client\fg{} n'offre actuellement pas d'attributs supplémentaires par rapport au client générique. J'ai quand-même créé une entité spécialisée pour permettre une éventuelle évolution future.
+J'ai défini une entité générique pour les client. Ensuite j'ai créé des entités plus spécialisées pour les clients offrants et les clients cherchant un bien. À mon sens, un client qui aujourd'hui est un client cherchant un bien peut demain être un client offrant un bien, d'où l'utilisation d'un client générique. L'entité \code{Client} n'offre actuellement pas d'attributs supplémentaires par rapport au client générique, mais bien des associations propres.

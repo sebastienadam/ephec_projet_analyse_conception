@@ -17,13 +17,9 @@ La figure \refpage{img_uc} illustre les cas d'utilisations du projet.
 
 L'employé va créer une classe et définir les paramètres que les biens devront remplir pour en faire partie.
 
-\subsection{Mettre un bien en vente}
+\subsection{Proposer un bien}
 
-Le bien à mettre en vente doit appartenir à un client enregistré dans le système. S'il s'agit d'un nouveau client, ce dernier sera d'abord enregistré. L'employé va enregistrer les différents paramètres du bien dans le système. Les paramètres à enregistrer dépendront du type de bien. Le bien se verra attribuer une ou plusieurs classes d'après ses paramètres. Si aucune classe standard n'existe pour ce bien, il faudra en créer une.
-
-\subsection{Mettre un bien en location}
-
-Le bien à mettre en location doit appartenir à un client enregistré dans le système. S'il s'agit d'un nouveau client, ce dernier sera d'abord enregistré. L'employé va enregistrer les différents paramètres du bien dans le système. Les paramètres à enregistrer dépendront du type de bien. Le bien se verra attribuer une ou plusieurs classes d'après ses paramètres. Si aucune classe standard n'existe pour ce bien, il faudra en créer une.
+Le bien à mettre en vente ou en location doit appartenir à un client enregistré dans le système. S'il s'agit d'un nouveau client, ce dernier sera d'abord enregistré. L'employé va enregistrer les différents paramètres du bien dans le système. Les paramètres à enregistrer dépendront du type de bien et du type d'offre. Le bien se verra attribuer une classe standard d'après ses paramètres. Si aucune classe standard n'existe pour ce bien, il faudra en créer une.
 
 \subsection{Enregistrer un client}
 
@@ -38,6 +34,8 @@ Sinon, le client sera associé à une série de classes standards qui correspond
 Le système va générer la liste de tous les biens correspondants aux classes standard d'un client donné.
 
 \subsection{Visiter un bien}
+
+Ce cas d'utilisation va permettre de convenir de rendez-vous pour la visite de biens immobiliers. Ces visites concernent un client qui doit être actif dans le système. Si ce n'est pas le cas, il faudra activer ce client.
 
 Pour chaque bien obtenu par la recherche et retenu pas le client, le système va fournir toutes les informations. Si le client est intéressé par une visite, différentes dates et heures seront proposées par le système. L'employé et le client se mettent d'accord sur une date et une heure précise qui sera enregistrée dans le système. Un responsable de l'agence sera également assigné pour effectuer la visite.
 
