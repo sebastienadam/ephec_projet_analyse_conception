@@ -1,15 +1,15 @@
-\chapter{Cas d'utilisations}
+\chapter{Cas d'utilisation}
 
 \section{Diagramme}
 
 \begin{figure}
   \centering
   \includegraphics[width=0.95\textwidth]{IMG/uc}
-  \caption{Cas d'utilisations}
+  \caption{Cas d'utilisation}
   \label{img_uc}
 \end{figure}
 
-La figure \refpage{img_uc} illustre les cas d'utilisations du projet.
+La figure \refpage{img_uc} illustre les cas d'utilisation du projet.
 
 \section{Scénarios}
 
@@ -23,27 +23,23 @@ Le bien à mettre en vente ou en location doit appartenir à un client enregistr
 
 \subsection{Enregistrer un client}
 
-L'employé va enregistrer les données du client dans le système. Les données à enregistrer sont le nom et le numéro de téléphone.
+L'employé va enregistrer les données du client dans le système. Les données à enregistrer sont le nom et le numéro de téléphone. S'il s'agit d'un offrant, l'employé enregistrera également le téléphone professionnel ainsi que les heures heures auxquelles le client est accessible sur chaque numéro. Sinon, le client sera associé à une série de classes standards qui correspondent aux types de biens qu'il recherche.
 
-S'il s'agit d'un offrant, l'employé enregistrera également le téléphone professionnel ainsi que les heures heures auxquelles le client est accessible sur chaque numéro.
+\subsection{Enregistrer une demande}
 
-Sinon, le client sera associé à une série de classes standards qui correspondent aux types de biens qu'il recherche. Une recherche de bien sera ensuite automatiquement exécutée.
+L'enregistrement d'une demande d'un bien sera effectuée pour un client enregistré dans le système. S'il s'agit d'un nouveau client, ce dernier sera d'abord enregistré. Le client sera associé à une série de classes standard correspondant aux critères qu'il a donné. Le système va générer la liste de tous les biens correspondants à ces classes standard et encore disponibles. Le résultat sera imprimé et soumis au client.
 
-\subsection{Chercher un bien}
-
-Le système va générer la liste de tous les biens correspondants aux classes standard d'un client donné.
-
-\subsection{Visiter un bien}
+\subsection{Organiser la visite de biens}
 
 Ce cas d'utilisation va permettre de convenir de rendez-vous pour la visite de biens immobiliers. Ces visites concernent un client qui doit être actif dans le système. Si ce n'est pas le cas, il faudra activer ce client.
 
-Pour chaque bien obtenu par la recherche et retenu pas le client, le système va fournir toutes les informations. Si le client est intéressé par une visite, différentes dates et heures seront proposées par le système. L'employé et le client se mettent d'accord sur une date et une heure précise qui sera enregistrée dans le système. Un responsable de l'agence sera également assigné pour effectuer la visite.
+Pour chaque bien obtenu par la recherche et retenu pas le client, le système va fournir des informations plus précises s'y rapportant, ainsi qu'une photo. Si le client est intéressé par une visite, différentes dates et heures seront proposées par le système. L'employé et le client se mettent d'accord sur une date et une heure précises qui seront enregistrées dans le système. Un responsable de l'agence sera également assigné pour effectuer la visite. Si aucun rendez-vous n'a pu être organisé, aucune visite ne sera effectuée. Si le client n'est pas intéressé par le bien, cela sera également enregistré dans le système.
 
 \subsection{Acquérir un bien}
 
 Lorsqu'un client est intéressé par un bien, une proposition sera envoyée au propriétaire. Si ce dernier l'accepte, un contrat sera émis entre le propriétaire et l'acquéreur via l'agence.
 
-Il est possible que le propriétaire n'accepte pas l'offre de l'acquéreur. Ce refus peut être définitif, ou déboucher sur une négociation qui aboutira à l'acceptation d'une offre.
+Il est possible que le propriétaire n'accepte pas l'offre de l'acquéreur. Ce refus peut être définitif, ou déboucher sur une négociation qui aboutira à l'acceptation ou non d'une offre.
 
 \subsection{Générer les statistiques}
 
@@ -51,7 +47,6 @@ De manière à fournir régulièrement des informations pertinentes au service d
 
 \section{Rapport}
 
-J'ai commencé par ce diagramme afin d'avoir une idée générale de ce qui devrait être fait par l'application.
+J'ai commencé par ce diagramme afin d'avoir une idée générale de ce qui devrait être fait par l'application. Il est basé sur la description des tâches à réaliser de l'énoncé.
 
-J'ai ici défini les cas d'utilisations principaux résultant de l'exercice courant des opérations d'une agence immobilière. Nous pourrions également envisager différents cas d'utilisations pour l'administration du système comme la modification des informations du système (mise à jour et suppression des classes standard, des biens, des clients, etc.), la gestion des accès des employés, la gestion des contrats, etc.
-
+Nous pourrions également envisager différents cas d'utilisation supplémentaires pour l'administration du système comme la modification des informations du système (mise à jour et suppression des classes standard, des biens, des clients, etc.), la gestion des accès des employés, la gestion des contrats, etc. Cette étude ne tiendrait toutefois pas dans ce document et je ne l'ai pas prise en compte.
