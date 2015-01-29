@@ -38,6 +38,8 @@ Le type \code{PropertyType} est une énumération des éléments suivants: studi
      \hline
      \code{Property} & Bien immobilier géré par l'agence immobilière. & \code{ID} \\
      \hline
+     \code{ProposedProperty} & Proposition d'un bien immobilier à un client. & \code{ID} \\
+     \hline
      \code{RequestingClient} & Client cherchant à acquérir (achat ou location) un bien immobilier. Cette classe hérite de \code{CustomClient}. & \code{ID} \\
      \hline
      \code{StandardClass} & Classe standard permettant de retrouver les biens immobilier pouvant intéresser un client. & \code{Code} \\
@@ -85,6 +87,8 @@ des charges, le type de bail, la \og{}garniture\fg{} (meublé, non meublé). \\
   \textbf{(BR012)} Pour tout bien de type \og{}terrain\fg{}, il faudra indiquer sa superficie. \\
   % attributs valides pour emplacement pour bureaux ou commerce
   \textbf{(BR013)} Pour tout bien de type \og{}emplacement pour bureaux ou commerce\fg{}, il faudra indiquer sa superficie et le nombre de pièces le composant. \\
+  % unicité proposition de bien à un client
+  \textbf{(BR014)} Un bien immobilier ne pourra être proposé qu'une seule fois à un client. \\
   \hline
   \end{tabular}
   \caption{Contraintes pour le diagramme de classes}
@@ -97,3 +101,10 @@ des charges, le type de bail, la \og{}garniture\fg{} (meublé, non meublé). \\
 J'ai réalisé ce diagramme en troisième lieu. Il est basé sur le diagramme entités-associations et représente la structure des différentes données qui sera implémentée. Nous nous sommes ici plus proche de la réalité que du conceptuel.
 
 Les entités ont été remplacées par des classes. Les associations ont été remplacées soit par des attributs, soit par des classes suivant les cas.
+
+Dans la classe \code{RequestingClient}, nous avons les trois méthodes suivantes:
+\begin{itemize}
+  \item \code{InterestProperties()} retourne la liste des propriétés qui ont été proposées au client et pour lesquelles il a manifesté un intérêt;
+  \item \code{PossibleProperties()} retourne la liste des propriétés correspondantes aux classes standard associées au client;
+  \item \code{ProposedProperties()} retourne la liste des propriétés qui ont été proposées au client.
+\end{itemize}
