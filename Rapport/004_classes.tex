@@ -15,7 +15,7 @@ La figure \refpage{img_cd} illustre le diagramme de classes du projet.
 
 La description des classes est reprise dans la table \refpage{tbl_description_classes}. Les contraintes de ce diagramme figurent dans le tableau \refpage{tbl_business_rules}.
 
-Le type \code{PropertyType} est une énumération des éléments suivants: studio, appartement, maison, entrepôt, emplacement et terrains. Le type \code{OfferType} est une énumération des éléments suivants: location, vente. Le type \code{Status} est une énumération des éléments suivants: disponible, loué, acheté. Ces énumérations pourront évoluer si nécessaire.
+Le type \code{PropertyType} est une énumération des éléments suivants: \og{}studio\fg{}, \og{}appartement\fg{}, \og{}maison\fg{}, \og{}entrepôt\fg{}, \og{}emplacement\fg{} et \og{}terrain\fg{}. Le type \code{OfferType} est une énumération des éléments suivants: \og{}location\fg{}, \og{}vente\fg{}. Le type \code{Status} est une énumération des éléments suivants: \og{}disponible\fg{}, \og{}loué\fg{}, \og{}acheté\fg{}. Ces énumérations pourront évoluer si nécessaire.
 
 \begin{table}
   \centering
@@ -42,7 +42,7 @@ Le type \code{PropertyType} est une énumération des éléments suivants: studi
      \hline
      \code{RequestingClient} & Client cherchant à acquérir (achat ou location) un bien immobilier. Cette classe hérite de \code{CustomClient}. & \code{ID} \\
      \hline
-     \code{StandardClass} & Classe standard permettant de retrouver les biens immobilier pouvant intéresser un client. & \code{Code} \\
+     \code{StandardClass} & Classe standard permettant de classer les biens immobilier et pouvant être associée à un client cherchant à acquérir un bien afin de générer les listes de biens pouvant intéresser ce dernier. & \code{Code} \\
      \hline
      \code{Visit} & Visite d'un bien immobilier effectuée par un client sous la responsabilité d'un employé de l'agence immobilière. & \code{ID} \\
      \hline
