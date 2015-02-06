@@ -100,11 +100,14 @@ des charges, le type de bail, la \og{}garniture\fg{} (meublé, non meublé). \\
 
 J'ai réalisé ce diagramme en troisième lieu. Il est basé sur le diagramme entités-associations et représente la structure des différentes données qui sera implémentée. Nous nous sommes ici plus proche de la réalité que du conceptuel.
 
-Les entités ont été remplacées par des classes. Les associations ont été remplacées soit par des attributs, soit par des classes suivant les cas.
+Les entités ont été remplacées par des classes. Les associations ont été remplacées soit par des attributs, soit par des classes suivant les cas. Certaines classes possèdent des méthodes permettant de retrouver les classes qui y sont associées.
 
-Dans la classe \code{RequestingClient}, nous avons les trois méthodes suivantes:
-\begin{itemize}
-  \item \code{InterestProperties()} retourne la liste des propriétés qui ont été proposées au client et pour lesquelles il a manifesté un intérêt;
-  \item \code{PossibleProperties()} retourne la liste des propriétés correspondantes aux classes standard associées au client;
-  \item \code{ProposedProperties()} retourne la liste des propriétés qui ont été proposées au client.
-\end{itemize}
+Dans la classe \code{Department}, nous avons la méthode \code{Employees()} qui permet de retrouver la liste des employés du département.
+
+Dans la classe \code{OfferingClient()}, nous avons la méthode \code{Properties()} qui retourne la liste des propriétés qui appartiennent au client.
+
+Dans la classe \code{Property}, nous avons la méthode \code{Visits()} qui permet de retrouver la liste des visites qui ont été organisées pour ce bien, et la méthode \code{Acquisition()} qui permet de retrouver les données concernant l'acquisition de ce bien.
+
+Dans la classe \code{RequestingClient}, nous avons la méthode \code{InterestProperties()} qui retourne la liste des propriétés qui ont été proposées au client et pour lesquelles il a manifesté un intérêt, la méthode \code{PossibleProperties()} retourne la liste des propriétés correspondantes aux classes standard associées au client, et la méthode \code{ProposedProperties()} retourne la liste des propriétés qui ont été proposées au client.
+
+Dans la classe \code{StandardClass()}, nous avons la méthode \code{Properties()} qui retourne la liste des propriétés associées à cette classe standard.
