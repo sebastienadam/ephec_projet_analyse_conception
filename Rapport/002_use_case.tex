@@ -15,7 +15,11 @@ La figure \refpage{img_uc} illustre les cas d'utilisation du projet.
 
 \subsection{Définir une classe standard}
 
-L'employé crée une nouvelle classe standard et y enregistre les paramètres que les biens devront remplir pour en faire partie.
+L'employé crée une nouvelle classe standard et y enregistre les paramètres que les biens devront remplir pour en faire partie. Ces paramètres sont: un code de classe, le type de bien immobilier, le mode d'offre, un prix maximum et une superficie minimum.
+
+Dans le cas d'appartement à louer, le prix maximum correspond à un prix mensuel maximum de location. Pour les biens à acheter, il correspond à un prix maximum d'achat.
+
+Dans le cas d'appartement ou maison, la superficie minimale correspond à un nombre de chambres. Dans le cas d'immeubles commerciaux ou de studios, à une superficie exprimée en m². Dans le cas d'un terrain à bâtir, à une superficie exprimée en ares.
 
 \subsection{Proposer un bien}
 
@@ -34,15 +38,15 @@ Le client pourra examiner la liste et éliminer de suite les biens immobiliers q
 \subsection{Organiser une visite de biens}
 \label{section_UC_organiser_une_visite_de_biens}
 
-Ce cas d'utilisation va permettre de convenir de rendez-vous pour la visite de biens immobiliers. Ces visites concernent un client qui doit être actif dans le système. Si ce n'est pas le cas, il faudra activer ce client.
+Ce cas d'utilisation va permettre de convenir de rendez-vous pour la visite de biens immobiliers. Ces visites concernent un client qui doit être actif dans le système. Si ce n'est pas le cas, il faudra l'activer.
 
-Pour chacun des biens retenu par le client, un employé consulte, à l'aide d'un terminal, les informations s'y rapportant afin de fournir des renseignements plus précis tandis que son collègue recherche la photo correspondant dans le fichier. Grâce aux renseignements supplémentaires et à la photo, le client peut se faire une opinion sur le bien. L'employé enregistre alors l'accord ou le désaccord du client.
+Pour chacun des biens retenus par le client, un employé consulte, à l'aide d'un terminal, les informations s'y rapportant afin de fournir des renseignements plus précis tandis que son collègue recherche la photo correspondant dans le fichier. Grâce aux renseignements supplémentaires et à la photo, le client peut se faire une opinion sur le bien. L'employé enregistre alors l'accord ou le désaccord du client.
 
-La terminaison de la consultation de tous les biens déclenche automatiquement, pour chaque bien retenu, l'affichage des dates et heures de visites déjà planifiées pour les autres clients intéressés par ce bien. En fonction de ces informations l'employé et le client conviennent ensemble d'une date et d'une heure de visite que l'employé enregistre. Il enregistre également le nom de la personne responsable de cette visite.
+La terminaison de la consultation de tous les biens déclenche automatiquement, pour chaque bien retenu, l'affichage des dates et heures de visites déjà planifiées pour les autres clients intéressés par ce bien. En fonction de ces informations l'employé et le client conviennent ensemble d'une date et d'une heure de visite que l'employé enregistre. Il enregistre également le nom de l'employé qui sera responsable de cette visite.
 
 \subsection{Acquérir un bien}
 
-Lorsqu'un client est intéressé par un bien, une proposition sera envoyée au propriétaire. Si ce dernier l'accepte, un contrat sera émis entre le propriétaire et l'acquéreur via l'agence.
+Lorsqu'un client est intéressé par un bien, une proposition sera envoyée au propriétaire. Si ce dernier l'accepte, un contrat sera émis entre le propriétaire et l'acquéreur par l'agence.
 
 Il est possible que le propriétaire n'accepte pas l'offre de l'acquéreur. Ce refus peut être définitif, ou déboucher sur une négociation qui aboutira à l'acceptation ou non d'une offre.
 
